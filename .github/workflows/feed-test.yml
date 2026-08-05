@@ -110,8 +110,16 @@ jobs:
 
           echo "Shift complete after $CYCLE cycles."
 
+      # Only hand off when the shift ended NATURALLY.
+      #
+      # This was 'if: always()' and that was a live bug: a cancelled shift also
+      # dispatched a replacement. Since a new shift cancels the old one, every
+      # cancellation spawned a successor that cancelled the shift that had just
+      # cancelled it -- an endless cancel storm. Caught in the test repo at
+      # 2026-08-05T13:04Z. On cancellation we do nothing, because whatever
+      # cancelled us is already running.
       - name: Hand off to the next shift
-        if: always()
+        if: success()
         env:
           HANDOFF_PAT: ${{ secrets.HANDOFF_PAT }}
         run: |
