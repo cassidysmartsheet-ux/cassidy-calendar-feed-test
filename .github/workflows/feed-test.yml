@@ -22,7 +22,12 @@ on:
     # Safety net only. Deliberately not on the hour -- GitHub's scheduler is
     # most congested at :00 and delays are worst there.
     - cron: '13,33,53 * * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      shift_minutes:
+        description: 'Length of this shift in minutes (short values are for proving the handoff)'
+        required: false
+        default: '340'
 
 permissions:
   contents: write
@@ -48,7 +53,9 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          SHIFT_SECONDS=$((340 * 60))
+          SHIFT_MINUTES="${{ github.event.inputs.shift_minutes || '340' }}"
+          echo "Shift length: $SHIFT_MINUTES minutes"
+          SHIFT_SECONDS=$((SHIFT_MINUTES * 60))
           STARTED=$(date +%s)
           ENDS=$((STARTED + SHIFT_SECONDS))
           CYCLE=0
@@ -122,6 +129,6 @@ jobs:
             -H "Authorization: Bearer $HANDOFF_PAT" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/workflows/feed-test.yml/dispatches" \
-            -d '{"ref":"main"}')
+            -d '{"ref":"main","inputs":{"shift_minutes":"340"}}')
           echo "handoff dispatch HTTP $code"
           [ "$code" = "204" ] || cat /tmp/handoff.txt
