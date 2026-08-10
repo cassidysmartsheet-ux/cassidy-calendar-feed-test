@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-09T15:32:43+00:00",
+  "generatedAt": "2026-08-10T18:30:02+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
-  "totalRows": 339,
+  "totalRows": 342,
   "events": [
     {
       "jobNumber": "RO-001",
@@ -1071,6 +1071,26 @@
       "phase": "Hand",
       "startDate": "2026-09-16",
       "endDate": "2026-09-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3840-26",
+      "client": "JLL - FRANKLIN",
+      "city": "Franklin",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-10-16",
+      "endDate": "2026-10-16",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3840-26",
+      "client": "JLL - FRANKLIN",
+      "city": "Franklin",
+      "crew": "Hand",
+      "phase": "Paving",
+      "startDate": "2026-10-19",
+      "endDate": "2026-10-19",
       "status": "Scheduled"
     },
     {
@@ -3141,6 +3161,16 @@
       "phase": "Milling",
       "startDate": "2026-09-30",
       "endDate": "2026-09-30",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "3840-26",
+      "client": "JLL - FRANKLIN",
+      "city": "Franklin",
+      "crew": "Reclaim/Grading",
+      "phase": "Pulverizing",
+      "startDate": "2026-10-13",
+      "endDate": "2026-10-15",
       "status": "Scheduled"
     },
     {
