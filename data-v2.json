@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T12:39:49+00:00",
+  "generatedAt": "2026-08-11T19:45:56+00:00",
   "source": "Smartsheet Operations Calendar Report (id 3854855551537028)",
   "totalRows": 347,
   "events": [
@@ -461,6 +461,56 @@
       "phase": "Hand",
       "startDate": "2026-06-17",
       "endDate": "2026-06-17",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0338-26",
+      "client": "town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-27",
+      "endDate": "2026-05-27",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0339-26",
+      "client": "town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-05-29",
+      "endDate": "2026-05-29",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0339-26",
+      "client": "town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-01",
+      "endDate": "2026-06-01",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0340-26",
+      "client": "town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-03",
+      "endDate": "2026-06-03",
+      "status": "Complete"
+    },
+    {
+      "jobNumber": "FJ-0341-26",
+      "client": "town of tewksbury",
+      "city": "tewksbury",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-04",
       "status": "Complete"
     },
     {
@@ -1051,6 +1101,26 @@
       "phase": "Hand",
       "startDate": "2026-08-28",
       "endDate": "2026-08-28",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0512-26",
+      "client": "city of billerica",
+      "city": "billerica",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-17",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0512-26",
+      "client": "city of billerica",
+      "city": "billerica",
+      "crew": "Hand",
+      "phase": "Hand",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-21",
       "status": "Scheduled"
     },
     {
@@ -2324,6 +2394,16 @@
       "status": "Scheduled"
     },
     {
+      "jobNumber": "FJ-0374-26",
+      "client": "Hawthorne brook middle school",
+      "city": "townsend",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-06-30",
+      "endDate": "2026-06-30",
+      "status": "Complete"
+    },
+    {
       "jobNumber": "4095-26",
       "client": "Silva Associates Poroperty Management",
       "city": "Andover",
@@ -2471,6 +2551,16 @@
       "phase": "Paving",
       "startDate": "2026-09-14",
       "endDate": "2026-09-14",
+      "status": "Scheduled"
+    },
+    {
+      "jobNumber": "FJ-0482-26",
+      "client": "Groveland school",
+      "city": "groveland",
+      "crew": "Paving",
+      "phase": "Hand",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-13",
       "status": "Scheduled"
     },
     {
